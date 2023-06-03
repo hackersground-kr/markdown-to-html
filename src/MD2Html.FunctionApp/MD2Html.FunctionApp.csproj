@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AzureFunctionsVersion>v4</AzureFunctionsVersion>
+
+    <AssemblyName>MD2Html.FunctionApp</AssemblyName>
+    <RootNamespace>MD2Html.FunctionApp</RootNamespace>
+    <UserSecretsId>31bfc51f-f6e6-44b2-9d64-c17574741855</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Markdig.Signed" Version="*" />
+    <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.*" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi" Version="*" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.*" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -4,9 +4,6 @@ param name string
 param location string = 'Korea Central'
 param env string = 'dev'
 
-param apiManagementPublisherName string
-param apiManagementPublisherEmail string
-
 var locationCodeMap = {
   australiacentral: 'auc'
   'Australia Central': 'auc'
